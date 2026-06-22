@@ -1,0 +1,7 @@
+{
+    "mcp_servers": {
+        "swarmcloud": {
+            "url": "https://swarmplatform.cloud/mcp/swarm"
+        }
+    }
+}

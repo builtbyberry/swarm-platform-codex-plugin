@@ -1,0 +1,41 @@
+{
+    "name": "swarm",
+    "version": "0.1.0",
+    "description": "Swarm shared context bus \u2014 connects the hosted Swarm MCP server, teaches the load-at-start / checkpoint-at-end ritual, and ships the skill for loading, checkpointing, onboarding, curation, handoffs, and dispatch.",
+    "author": {
+        "name": "Swarm",
+        "url": "https://swarmplatform.cloud"
+    },
+    "homepage": "https://swarmplatform.cloud",
+    "license": "Apache-2.0",
+    "keywords": [
+        "swarm",
+        "context",
+        "memory",
+        "mcp",
+        "collaboration",
+        "handoff",
+        "dispatch"
+    ],
+    "skills": "./skills/",
+    "mcpServers": "./.mcp.json",
+    "hooks": "./hooks/hooks.json",
+    "interface": {
+        "displayName": "Swarm",
+        "shortDescription": "Shared context bus for your AI sessions.",
+        "longDescription": "Swarm is shared memory for your coding sessions. Load what other sessions already know at the start of a task, checkpoint your work at the end, and curate durable knowledge into channel records \u2014 so context travels with you and your team.",
+        "developerName": "Swarm",
+        "category": "Productivity",
+        "capabilities": [
+            "Read",
+            "Write"
+        ],
+        "websiteURL": "https://swarmplatform.cloud",
+        "brandColor": "#BC5C36",
+        "defaultPrompt": [
+            "Load Swarm context for this project.",
+            "What does Swarm already know about this?",
+            "Checkpoint my work to Swarm."
+        ]
+    }
+}
