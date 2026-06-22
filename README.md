@@ -9,10 +9,10 @@ sessions already know at the start of a task, checkpoint your work at the end.
 
 ```bash
 codex plugin marketplace add builtbyberry/swarm-codex
-codex plugin install swarm
+codex plugin add swarm
 ```
 
-`codex plugin install swarm` registers the plugin for your user, so it is
+`codex plugin add swarm` registers the plugin for your user, so it is
 available in every project. Codex opens Swarm in your browser to authorize on
 install; if it needs a manual sign-in, run `codex mcp login swarmcloud`.
 

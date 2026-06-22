@@ -15,14 +15,14 @@ Fastest — add the Swarm marketplace and install (no download):
 
 ```bash
 codex plugin marketplace add builtbyberry/swarm-codex
-codex plugin install swarm
+codex plugin add swarm
 ```
 
 Downloaded this as a zip? It is a self-contained marketplace — from the directory you unzipped it into:
 
 ```bash
 codex plugin marketplace add ./
-codex plugin install swarm
+codex plugin add swarm
 ```
 
 On install, Codex opens Swarm in your browser to authorize. If the connection needs a manual sign-in, run:
