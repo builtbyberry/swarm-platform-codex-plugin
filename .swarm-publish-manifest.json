@@ -1,0 +1,20 @@
+[
+    ".agents/plugins/marketplace.json",
+    "plugins/swarm/.codex-plugin/plugin.json",
+    "plugins/swarm/.mcp.json",
+    "plugins/swarm/LICENSE",
+    "plugins/swarm/README.md",
+    "plugins/swarm/hooks/hooks.json",
+    "plugins/swarm/skills/checkpoint/SKILL.md",
+    "plugins/swarm/skills/curate/SKILL.md",
+    "plugins/swarm/skills/dispatch/SKILL.md",
+    "plugins/swarm/skills/handoff/SKILL.md",
+    "plugins/swarm/skills/load/SKILL.md",
+    "plugins/swarm/skills/onboard/SKILL.md",
+    "plugins/swarm/skills/swarm/SKILL.md",
+    "plugins/swarm/skills/swarm/reference/capture-modes.md",
+    "plugins/swarm/skills/swarm/reference/curation.md",
+    "plugins/swarm/skills/swarm/reference/dispatch.md",
+    "plugins/swarm/skills/swarm/reference/handoff.md",
+    "plugins/swarm/skills/swarm/reference/tools.md"
+]
