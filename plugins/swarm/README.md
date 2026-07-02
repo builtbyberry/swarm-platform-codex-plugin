@@ -11,13 +11,6 @@ Connects this project to Swarm, the shared context bus, and teaches Codex the ri
 
 ## Install
 
-Fastest — add the Swarm marketplace and install (no download):
-
-```bash
-codex plugin marketplace add builtbyberry/swarm-platform-codex-plugin
-codex plugin add swarm
-```
-
 Downloaded this as a zip? It is a self-contained marketplace — from the directory you unzipped it into:
 
 ```bash
