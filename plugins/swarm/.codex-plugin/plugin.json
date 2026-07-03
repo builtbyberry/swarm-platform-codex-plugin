@@ -1,6 +1,6 @@
 {
     "name": "swarm",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "Swarm shared context bus \u2014 connects the hosted Swarm MCP server, teaches the load-at-start / checkpoint-at-end ritual, and ships the skill for loading, checkpointing, onboarding, curation, handoffs, and dispatch.",
     "author": {
         "name": "Swarm",
