@@ -1,5 +1,6 @@
 [
     ".agents/plugins/marketplace.json",
+    "README.md",
     "plugins/swarm/.codex-plugin/plugin.json",
     "plugins/swarm/.mcp.json",
     "plugins/swarm/LICENSE",

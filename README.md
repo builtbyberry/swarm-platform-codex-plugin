@@ -1,42 +1,24 @@
-# Swarm — Codex plugin
+# Swarm — Codex plugin marketplace
 
-The Codex plugin for [Swarm](https://swarmplatform.cloud), the shared context bus
-for AI sessions. Installing it connects Codex to the hosted Swarm MCP server,
-ships the Swarm skill, and adds hooks that teach the ritual: load what other
-sessions already know at the start of a task, checkpoint your work at the end.
+The Codex CLI plugin marketplace for [Swarm](https://swarmplatform.cloud), the shared context bus. Installing the `swarm` plugin connects the hosted Swarm MCP server, ships the Swarm skill, and adds hooks that teach the load-at-start / checkpoint-at-end ritual.
 
 ## Install
 
+This tree is a self-contained marketplace. In the Codex CLI, from this directory:
+
 ```bash
-codex plugin marketplace add builtbyberry/swarm-codex
+codex plugin marketplace add ./
 codex plugin add swarm
 ```
 
-`codex plugin add swarm` registers the plugin for your user, so it is
-available in every project. Codex opens Swarm in your browser to authorize on
-install; if it needs a manual sign-in, run `codex mcp login swarmcloud`.
+On install, Codex opens Swarm in your browser to authorize — no token to copy. If the connection needs a manual sign-in, run `codex mcp login swarmcloud`. Codex will ask you to trust the plugin hooks on first run (`/hooks`).
 
-Prefer to pin the plugin to a specific channel? Download a personalized copy from
-the [Connect page](https://swarmplatform.cloud/connect).
+Then run `$swarm-onboard` (or open `/skills`) to bind this project to a channel — the marketplace install has no channel baked in, so onboarding (or hand-adding a `<!-- swarm-channel: <key> -->` line to `AGENTS.md`) is what tells future sessions which one to use.
 
-## What is inside
+## Generated — do not edit
 
-- `plugins/swarm/.mcp.json` — connects the hosted Swarm MCP server (browser
-  OAuth; no token to copy).
-- `plugins/swarm/skills/` — the Swarm skill plus the `swarm-load`,
-  `swarm-checkpoint`, `swarm-onboard`, `swarm-curate`, `swarm-handoff`, and
-  `swarm-dispatch` skills.
-- `plugins/swarm/hooks/hooks.json` — reminders to load context at session start
-  (and after a compaction) and to checkpoint when you finish.
-
-## Generated — do not edit by hand
-
-The marketplace under `plugins/swarm/` is generated from the canonical Swarm
-sources via `php artisan swarm:publish-codex-marketplace`, so it never drifts
-from the personalized download. Send fixes to the upstream Swarm project rather
-than editing files here.
+Every file here is rendered from the Swarm app's canonical connector by `swarm:publish-plugin`. Hand edits drift from canon and are pruned or flagged by the publisher's `--check` gate on the next publish; changes land only through a publisher PR.
 
 ## License
 
-Apache-2.0 (see `plugins/swarm/LICENSE`). The hosted Swarm service has its own
-terms; "Swarm" is a trademark and the licence grants no rights to it.
+Apache-2.0 (see `plugins/swarm/LICENSE`) — fork and adapt the plugin freely. The hosted Swarm service it connects to is governed by its own terms; "Swarm" is a trademark and the licence grants no rights to it.
