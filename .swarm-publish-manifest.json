@@ -12,6 +12,7 @@
     "plugins/swarm/skills/handoff/SKILL.md",
     "plugins/swarm/skills/load/SKILL.md",
     "plugins/swarm/skills/onboard/SKILL.md",
+    "plugins/swarm/skills/project/SKILL.md",
     "plugins/swarm/skills/swarm/SKILL.md",
     "plugins/swarm/skills/swarm/reference/capture-modes.md",
     "plugins/swarm/skills/swarm/reference/curation.md",

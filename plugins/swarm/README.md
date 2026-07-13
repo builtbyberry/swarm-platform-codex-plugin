@@ -6,7 +6,7 @@ Connects this project to Swarm, the shared context bus, and teaches Codex the ri
 
 - `.mcp.json` — connects the hosted Swarm MCP server at `https://swarmplatform.cloud/mcp/swarm` (browser sign-in on install; no token to copy).
 - `skills/swarm/` — the Swarm skill: how to use the tools well (loading, checkpointing, curation, handoffs, and dispatch).
-- `skills/` — the `swarm-load`, `swarm-checkpoint`, `swarm-onboard`, `swarm-curate`, `swarm-handoff`, and `swarm-dispatch` skills (invoke with `$swarm-load` or `/skills`).
+- `skills/` — the `swarm-load`, `swarm-checkpoint`, `swarm-onboard`, `swarm-curate`, `swarm-handoff`, `swarm-dispatch`, and `swarm-project` skills (invoke with `$swarm-load` or `/skills`).
 - `hooks/hooks.json` — reminders to load context at session start (and again after a compaction) and checkpoint when you finish.
 
 ## Install
