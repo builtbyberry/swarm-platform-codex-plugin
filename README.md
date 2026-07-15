@@ -13,7 +13,7 @@ codex plugin add swarm
 
 On install, Codex opens Swarm in your browser to authorize — no token to copy. If the connection needs a manual sign-in, run `codex mcp login swarmcloud`. Codex will ask you to trust the plugin hooks on first run (`/hooks`).
 
-Then run `$swarm-onboard` (or open `/skills`) to bind this project to a channel — the marketplace install has no channel baked in, so onboarding (or hand-adding a `<!-- swarm-channel: <key> -->` line to `AGENTS.md`) is what tells future sessions which one to use.
+Then run `$swarm-onboard` (or open `/skills`) to bind this project to a channel — the marketplace install has no channel baked in, so onboarding (or hand-adding a `<!-- swarm-channel: <workspace-slug>/<channel-key> -->` line to `AGENTS.md`) is what tells future sessions which one to use.
 
 ## Generated — do not edit
 
