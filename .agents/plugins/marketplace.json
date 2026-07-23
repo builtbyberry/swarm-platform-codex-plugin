@@ -1,14 +1,14 @@
 {
-    "name": "swarm",
+    "name": "prymer",
     "interface": {
-        "displayName": "Swarm"
+        "displayName": "Prymer"
     },
     "plugins": [
         {
-            "name": "swarm",
+            "name": "prymer",
             "source": {
                 "source": "local",
-                "path": "./plugins/swarm"
+                "path": "./plugins/prymer"
             },
             "policy": {
                 "installation": "AVAILABLE",
